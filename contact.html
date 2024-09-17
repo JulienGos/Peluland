@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Peluland</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="titre"><a href="index.html">Peluland</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="magasin.html">Magasin</a></li>
+                <li><a href="contact.html">Contacter-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Bienvenue sur Peluland</h1>
+    <h2>Le monde idéal pour les peluches</h2>
+
+    <form>
+        <p>* Ces zones sont obligatoires</p> <br>
+        <fieldset>
+            <br>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Nom* : </label><input type="text" id="nom" name="nom" required> <br><br>
+            <label for="prenom">Prénom* : </label><input type="text" id="prenom" name="prenom" required> <br><br>
+            <label>Genre* : </label>
+            <label for="homme">Homme</label><input type="radio" name="homme" id="homme" value="homme">
+            <label for="femme">Femme</label><input type="radio" name="femme" id="femme" value="femme">
+            <label for="autre">Autre</label><input type="radio" name="autre" id="autre" value="autre"> <br><br>
+
+            <label for="date">Date de naissance* : </label><input type="date" name="date" id="date" required> <br><br>
+            <label for="codePostal">Code Postal* : </label><input type="text" id="codePostal" name="codePostal" required> <br><br>
+            <label for="adresse">Adresse : </label><input type="text" id="adresse" name="adresse"> <br><br>
+            <label for="ville">Ville : </label><input type="text" id="ville" name="ville"> <br><br>
+            <label for="email">Email* : </label><input type="email" id="email" name="email" placeholder="exemple@afpa.fr" required> <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <br>
+            <label for="sujet">Sujet*</label><input type="text" id="sujet" name="sujet" required> <br><br>
+            <label for="votreQuestion">Votre question*</label> <textarea name="votreQuestion"
+                id="votreQuestion" required></textarea> <br> <br>
+
+            <input type="checkbox" id="traitement" name="traitement"><label for="traitement">J'accepte le traitement
+                informatique de ce formulaire</label> <br><br>
+
+            <input class="btn1" type="submit" value="Envoyez"><input class="btn2" type="reset" value="Annuler">
+        </fieldset>
+    </form>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="magasin.html">Magasin</a></li>
+            <li><a href="contact.html">Contacter-nous</a></li>
+        </ul>
+        <p>Copyright© GOSSELIN Julien 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

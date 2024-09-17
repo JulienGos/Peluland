@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "protestGuerrilla";
+    src: url("../Assets/Font/ProtestGuerrilla-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Oswald-Variablefont";
+    src: url("../Assets/Font/Oswald-VariableFont_wght.ttf");
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    color: bisque;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a {
+    color: bisque;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(248, 208, 158);
+    transform: scale(1.2);
+}
+
+nav {
+    background-color: #333;
+    color: bisque;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+nav.hidden {
+    top: -100px;
+}
+
+nav ul {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul .titre {
+    font-family: "protestGuerrilla", cursive;
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: "Oswald-Variablefont", sans-serif;
+    padding-top: 100px;
+    background-color: bisque;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    animation: slideUp 1s ease-out;
+}
+
+h2 {
+    text-align: center;
+    animation: slideUp 1s ease-out;
+}
+
+.photoAppat {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.photoAppat img {
+    max-width: 100%;
+    height: 500px;
+    animation: slideUp 1s ease-out;
+}
+
+.paraAppat {
+    padding: 10px 20px 10px 20px;
+    padding: 20px;
+    text-align: justify;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgb(248, 208, 158);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1s ease-out;
+}
+
+footer {
+    background-color: #333;
+    color: bisque;
+    padding: 10px 20px 10px 20px;
+    text-align: end;
+}
+
+footer ul li {
+    padding: 10px 20px 10px 20px;
+    background-color: #333;
+    color: bisque;
+    text-align: left;
+    display: block;
+}
+
+form {
+    margin: 15px;
+}
+
+table {
+    margin: 15px;
+}
+
+
+input {
+    border-radius: 5px;
+}
+
+.btn1 {
+    margin: 10px;
+    padding: 5px;
+    background-color: #333;
+    color: bisque;
+    font-weight: bold;
+
+}
+
+.btn1:hover {
+    color: green;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+.btn2 {
+    margin: 10px;
+    padding: 5px;
+    background-color: #333;
+    color: bisque;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    color: red;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
